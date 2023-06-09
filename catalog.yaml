@@ -1,21 +1,31 @@
----
-name: Ankit
+name: Cloudera
+
 entries:
-  - title: Churn Modeling with scikit-learn
-    label: churn-prediction
-    short_description: Build an scikit-learn model to predict churn using customer telco data.
-    long_description: This project demonstrates how to build a logistic regression
-      classification model to predict the probability  that a group of customers
-      will churn from a fictitious telecommunications company. In addition, the
-      model is  interpreted using a technique called Local Interpretable
-      Model-agnostic Explanations (LIME). Both the logistic  regression and LIME
-      models are deployed using CML's real-time model deployment capability and
-      interact with a  basic Flask-based web application.
-    image_path: https://raw.githubusercontent.com/cloudera/Applied-ML-Prototypes/master/images/churn-prediction.jpg
+  - title: LLM Chatbot Augmented with Enterprise Data
+    label: llm-chatbot
+    short_description: |
+        Build a Retrieval Augmented Generation (RAG) Question-Answer Large
+        Language Model (LLM) Bot with local documents
+    long_description: |
+        IMPORTANT: Please read the following before proceeding.  By configuring and launching this AMP, you will cause h2oai/h2ogpt-oig-oasst1-512-6.9b, which is a third party large language model (LLM), to be downloaded and installed into your environment from the third party’s website.  Please see https://huggingface.co/h2oai/h2ogpt-oig-oasst1-512-6.9b for more information about the LLM, including the applicable license terms.  If you do not wish to download and install h2oai/h2ogpt-oig-oasst1-512-6.9b, click “cancel” below.  By clicking “Configure Project” below, you acknowledge the foregoing statement and agree that Cloudera is not responsible or liable in any way for h2oai/h2ogpt-oig-oasst1-512-6.9b. Author: Cloudera Inc.
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        This AMP builds a Retrieval Augmented Generation (RAG)
+        Question-Answer Large Language Model (LLM) Bot application which
+        demonstrates how context from local documents can be used with pre-trained
+        LLM models to perform context retrieval and chat response
+        generation with factual responses.        
+
+    image_path: >-
+      https://raw.githubusercontent.com/cloudera/CML_AMP_LLM_Chatbot_Augmented_with_Enterprise_Data/main/images/catalog-screenshot.png
     tags:
-      - Churn Prediction
-      - Logistic Regression
-      - Explainability
-      - Lime
-    git_url: https://github.com/nkityd09/CML_LLM
+      - Chatbot
+      - LLM
+      - Huggingface
+      - Generative AI
+      - RAG
+      - Vector DB
+      - Milvus
+      - Transformers
+      - NLP
+    git_url: 'https://github.com/nkityd09/CML_LLM'
     is_prototype: true
